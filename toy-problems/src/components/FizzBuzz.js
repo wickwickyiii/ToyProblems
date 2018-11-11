@@ -5,23 +5,24 @@ export default class FizzBuzz extends Component {
     super();
   }
 
-  render() {
-    var numbers = N => {
-      var arr = [];
-      for (var i = 1; i <= N; i++) {
-        if (i % 5 === 0 && i % 3 === 0) {
-          arr.push("FizzBuzz");
-        } else if (i % 3 === 0) {
-          arr.push("Fizz");
-        } else if (i % 5 === 0) {
-          arr.push("Buzz");
-        } else {
-          arr.push(i);
-        }
-      }
-      return arr;
-    };
+  fizzBuzz(num) {
+    var arr = [];
 
+    for (var i = 0; i < arr.length; i++) {
+      if (i % 5 === 0 && i % 3 === 0) {
+        arr.push("FizzBuzz");
+      } else if (i % 3 === 0) {
+        arr.push("Fizz");
+      } else if (i % 5 === 0) {
+        arr.push("Buzz");
+      } else {
+        arr.push(i);
+      }
+    }
+    return arr;
+  }
+
+  render() {
     var fizzBuzz1 = "var numbers = N => {";
     var fizzBuzz2 = "var arr = [];";
     var fizzBuzz3 = "for (var i = 1; i <= N; i++) {";
