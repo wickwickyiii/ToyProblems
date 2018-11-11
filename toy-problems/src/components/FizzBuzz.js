@@ -1,8 +1,12 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 export default class FizzBuzz extends Component {
   constructor() {
     super();
+    this.state = {
+      userValue: 0
+    };
   }
 
   fizzBuzz(num) {
@@ -20,6 +24,12 @@ export default class FizzBuzz extends Component {
       }
     }
     return arr;
+  }
+
+  handleChange(e) {
+    this.setState({
+      userValue: e.target.value
+    });
   }
 
   render() {
@@ -75,6 +85,23 @@ export default class FizzBuzz extends Component {
           <div>{fizzBuzz13}</div>
           <div>{fizzBuzz14}</div>
           <div>{fizzBuzz15}</div>
+        </div>
+
+        <div>
+          <h3> Try it out! </h3>
+        </div>
+        <form>
+          <input
+            onChange={e => {
+              this.handleChange(e);
+            }}
+          />
+        </form>
+
+        <div>
+          <Link to="/">
+            <h5> Go Back Home </h5>
+          </Link>
         </div>
       </div>
     );
