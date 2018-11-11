@@ -1,0 +1,10 @@
+@import "sass/_Home";
+@import "sass/_FizzBuzz";
+
+$font-stack: Helvetica, sans-serif;
+$primary-color: #7ec4dc;
+
+body {
+  font-family: $font-stack;
+  color: $primary-color;
+}
