@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import route from "../route";
+import "./Home.css";
 import logo from "../logo.svg";
 import { Link } from "react-router-dom";
 
@@ -11,11 +11,10 @@ export default class Home extends Component {
 
   render() {
     return (
-      <div>
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>Eric's Toy Problem Practice</h1>
+      <div className="container">
+        <h1 id="home">Eric's Toy Problem Practice</h1>
         <div>
-          <Link to="/fizzbuzz">
+          <Link to="/fizzbuzz" className="problem">
             <p>FizzBuzz</p>
           </Link>
         </div>

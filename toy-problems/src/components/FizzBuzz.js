@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./Problem.css";
 import { Link } from "react-router-dom";
 
 export default class FizzBuzz extends Component {
@@ -12,7 +13,7 @@ export default class FizzBuzz extends Component {
   fizzBuzz(num) {
     var arr = [];
 
-    for (var i = 0; i < arr.length; i++) {
+    for (var i = 0; i < num; i++) {
       if (i % 5 === 0 && i % 3 === 0) {
         arr.push("FizzBuzz");
       } else if (i % 3 === 0) {
@@ -50,20 +51,20 @@ export default class FizzBuzz extends Component {
     var fizzBuzz15 = "};";
 
     return (
-      <div>
-        <h1>FizzBuzz</h1>
+      <div className="container">
+        <h2 id="toy">FizzBuzz</h2>
 
-        <p>
+        <p className="question">
           Return an array containing the numbers from 1 to N, where N is the
           parametered value. N will never be less than 1.
         </p>
 
-        <p>
+        <p className="question">
           Replace certain values however if any of the following conditions are
           met:
         </p>
 
-        <p>
+        <p className="question">
           If the value is a multiple of 3: use the value 'Fizz' instead If the
           value is a multiple of 5: use the value 'Buzz' instead If the value is
           a multiple of 3 5: use the value 'FizzBuzz' instead
