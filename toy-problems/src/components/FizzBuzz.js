@@ -70,7 +70,9 @@ export default class FizzBuzz extends Component {
           a multiple of 3 5: use the value 'FizzBuzz' instead
         </p>
 
-        <div>
+        {/* THERE HAS GOT TO BE A BETTER WAY TO SHOW CODE AS A STRING ON A PAGE... MAYBE SNIPPETS OR A REPL.IT PICTURE... */}
+
+        {/* <div>
           <div>{fizzBuzz1}</div>
           <div>{fizzBuzz2}</div>
           <div>{fizzBuzz3}</div>
@@ -86,7 +88,7 @@ export default class FizzBuzz extends Component {
           <div>{fizzBuzz13}</div>
           <div>{fizzBuzz14}</div>
           <div>{fizzBuzz15}</div>
-        </div>
+        </div> */}
 
         <div>
           <h3> Try it out! </h3>
