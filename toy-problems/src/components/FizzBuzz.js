@@ -72,23 +72,7 @@ export default class FizzBuzz extends Component {
 
         {/* THERE HAS GOT TO BE A BETTER WAY TO SHOW CODE AS A STRING ON A PAGE... MAYBE SNIPPETS OR A REPL.IT PICTURE... */}
 
-        {/* <div>
-          <div>{fizzBuzz1}</div>
-          <div>{fizzBuzz2}</div>
-          <div>{fizzBuzz3}</div>
-          <div>{fizzBuzz4}</div>
-          <div>{fizzBuzz5}</div>
-          <div>{fizzBuzz6}</div>
-          <div>{fizzBuzz7}</div>
-          <div>{fizzBuzz8}</div>
-          <div>{fizzBuzz9}</div>
-          <div>{fizzBuzz10}</div>
-          <div>{fizzBuzz11}</div>
-          <div>{fizzBuzz12}</div>
-          <div>{fizzBuzz13}</div>
-          <div>{fizzBuzz14}</div>
-          <div>{fizzBuzz15}</div>
-        </div> */}
+        
 
         <div>
           <h3> Try it out! </h3>
