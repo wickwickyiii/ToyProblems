@@ -77,6 +77,7 @@ export default class FizzBuzz extends Component {
         {/* EXTRA - HAVE THE CODE EXECUTE STEP BY STEP, I.E. HAVE THE ARGUMENT VISUALLY PASS THRU EACH PART OF THE FUNCTION AND THEN RETURN THE ANSWERS */}
 
         <p> function fizzBuzz (N) </p>
+        <p> var arr = [] </p>
 
         <div>
           <h3> Try it out! </h3>
