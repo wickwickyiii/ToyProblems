@@ -78,6 +78,7 @@ export default class FizzBuzz extends Component {
 
         <p> function fizzBuzz (N) </p>
         <p> var arr = [] </p>
+        <p> for ( var i=0; i < N.length; i++) </p>
 
         <div>
           <h3> Try it out! </h3>
