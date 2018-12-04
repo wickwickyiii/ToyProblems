@@ -8,16 +8,16 @@
   color: white;
 }
 
-.problem,
-.problem:active,
-.problem:link,
-.problem:visited {
+.link,
+.link:active,
+.link:link,
+.link:visited {
   text-decoration: none;
   font-size: 1em;
   color: white;
 }
 
-.problem:hover {
+.link:hover {
   font-size: 1.2em;
   transition-duration: 5ms;
 }

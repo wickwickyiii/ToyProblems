@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./Problem.css";
+import "./FizzBuzz.jpeg";
 import { Link } from "react-router-dom";
 
 export default class FizzBuzz extends Component {
@@ -34,36 +35,17 @@ export default class FizzBuzz extends Component {
   }
 
   render() {
-    var fizzBuzz1 = "var numbers = N => {";
-    var fizzBuzz2 = "var arr = [];";
-    var fizzBuzz3 = "for (var i = 1; i <= N; i++) {";
-    var fizzBuzz4 = "if (i % 5 === 0 && i % 3 === 0) {";
-    var fizzBuzz5 = "arr.push('FizzBuzz');";
-    var fizzBuzz6 = "} else if (i % 3 === 0) {";
-    var fizzBuzz7 = "arr.push('Fizz');";
-    var fizzBuzz8 = "} else if (i % 5 === 0) {";
-    var fizzBuzz9 = "arr.push('Buzz');";
-    var fizzBuzz10 = "} else {";
-    var fizzBuzz11 = "arr.push(i);";
-    var fizzBuzz12 = "}";
-    var fizzBuzz13 = "}";
-    var fizzBuzz14 = "return arr;";
-    var fizzBuzz15 = "};";
-
     return (
       <div className="container">
         <h2 id="toy">FizzBuzz</h2>
-
         <p className="question">
           Return an array containing the numbers from 1 to N, where N is the
           parametered value. N will never be less than 1.
         </p>
-
         <p className="question">
           Replace certain values however if any of the following conditions are
           met:
         </p>
-
         <p className="question">
           If the value is a multiple of 3: use the value 'Fizz' instead If the
           value is a multiple of 5: use the value 'Buzz' instead If the value is
@@ -71,18 +53,13 @@ export default class FizzBuzz extends Component {
         </p>
 
         {/* THERE HAS GOT TO BE A BETTER WAY TO SHOW CODE AS A STRING ON A PAGE... MAYBE SNIPPETS OR A REPL.IT PICTURE... */}
-
         {/* COULD JUST USE AN IMAGE HERE AS A SNIPPET AND THEN HAVE THE INPUT EXECUTE THE CODE AND DISPLAY THE ANSWER FOR THE USER */}
-
         {/* EXTRA - HAVE THE CODE EXECUTE STEP BY STEP, I.E. HAVE THE ARGUMENT VISUALLY PASS THRU EACH PART OF THE FUNCTION AND THEN RETURN THE ANSWERS */}
 
-        <p> function fizzBuzz (N) </p>
-        <p> var arr = [] </p>
-        <p> for ( var i=0; i < N.length; i++) </p>
-        <p> if (i % 5 === 0 && i % 3 === 0) </p>
+        <img alt="FizzBuzz" src="FizzBuzz.jpeg" className="fizz" />
 
         <div>
-          <h3> Try it out! </h3>
+          <h3 className="problem"> Try it out! </h3>
         </div>
         <form>
           <input
@@ -91,7 +68,6 @@ export default class FizzBuzz extends Component {
             }}
           />
         </form>
-
         <div>
           <Link to="/">
             <h5> Go Back Home </h5>
@@ -101,3 +77,40 @@ export default class FizzBuzz extends Component {
     );
   }
 }
+
+/* <p className="problem">
+            function fizzBuzz (N) <span>&#123;</span>
+          </p>
+          <p className="problem"> var arr = [ ] </p>
+          <p className="problem">
+            for ( var i=0 <span>&#59;</span> i <span>&#60;</span>{" "}
+            <span>N.length</span> <span>&#59;</span> i++){" "}
+          </p>
+          <p className="problem">
+            {" "}
+            if (i % 5 === 0 && i % 3 === 0) <span>&#123;</span>
+          </p>
+          <p className="problem"> arr.push("FizzBuzz")</p>
+          <p className="problem">
+            <span>&#125;</span> if (i % 5 === 0) <span>&#123;</span>{" "}
+          </p>
+          <p className="problem"> arr.push("Fizz") </p>
+          <p className="problem">
+            <span>&#125;</span> if (i % 3 === 0) <span>&#123;</span>{" "}
+          </p>
+          <p className="problem"> arr.push("Buzz") </p>
+          <p className="problem">
+            {" "}
+            <span> &#125; </span> else <span> &#123; </span>
+          </p>
+          <p className="problem"> arr.push(i) </p>
+          <p className="problem">
+            {" "}
+            <span> &#125; </span>{" "}
+          </p>
+
+          <p className="problem"> return arr </p>
+          <p className="problem">
+            {" "}
+            <span> &#125; </span>{" "}
+          </p> */

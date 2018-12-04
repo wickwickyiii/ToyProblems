@@ -7,8 +7,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-image: url("./assets/images/sonicBackground.png");
-  /* background-size: cover; */
-  position: static;
+  background-attachment: fixed;
 }
 
 code {
