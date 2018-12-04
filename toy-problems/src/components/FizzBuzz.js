@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./Problem.css";
-import "./FizzBuzz.jpeg";
+import fizzbuzz from "../assets/images/FB.png";
 import { Link } from "react-router-dom";
 
 export default class FizzBuzz extends Component {
@@ -56,7 +56,7 @@ export default class FizzBuzz extends Component {
         {/* COULD JUST USE AN IMAGE HERE AS A SNIPPET AND THEN HAVE THE INPUT EXECUTE THE CODE AND DISPLAY THE ANSWER FOR THE USER */}
         {/* EXTRA - HAVE THE CODE EXECUTE STEP BY STEP, I.E. HAVE THE ARGUMENT VISUALLY PASS THRU EACH PART OF THE FUNCTION AND THEN RETURN THE ANSWERS */}
 
-        <img alt="FizzBuzz" src="FizzBuzz.jpeg" className="fizz" />
+        <img alt="FizzBuzz" src={fizzbuzz} className="fizz" />
 
         <div>
           <h3 className="problem"> Try it out! </h3>
